@@ -8,5 +8,11 @@ export default {
   id: 4,
   name: "Animal Riddle",
   taskDescription: "I have four legs and I bark. What am I?",
-  correctAnswer: "dog"
+  correctAnswer: "dog",
+  choices:[
+    "cat",
+    "lion",
+    "fish",
+    "dog"
+  ]
 };

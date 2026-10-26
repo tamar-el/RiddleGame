@@ -8,5 +8,11 @@ export default {
   id: 3,
   name: "Logic Puzzle",
   taskDescription: "How many months have 28 days?",
-  correctAnswer: "12"
+  correctAnswer: "12",
+  choices:[
+    "12",
+    "47",
+    "9",
+    "1"
+  ]
 };

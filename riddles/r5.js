@@ -8,5 +8,11 @@ export default {
   id: 5,
   name: "Number Sequence",
   taskDescription: "What comes next: 2, 4, 6, 8, ?",
-  correctAnswer: "10"
+  correctAnswer: "10",
+  choices:[
+    "22",
+    "10",
+    "3",
+    "2"
+  ]
 };
