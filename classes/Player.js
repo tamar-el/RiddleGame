@@ -24,8 +24,8 @@ class Player {
             ? totalTime / this.times.length
             : 0;
 
-        console.log("Total time:", totalTime);
-        console.log("Average time:", avgTime);
+        console.log("Total time:", totalTime/1000);
+        console.log("Average time:", avgTime/1000);
     }
 
 }

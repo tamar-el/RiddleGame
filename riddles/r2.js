@@ -14,5 +14,9 @@ export default {
     "42",
     "9",
     "2"
-  ]
+  ],
+  level:"Medium",
+  timeLimit: 6,
+  hint:"the number is biger then 15"
+
 };

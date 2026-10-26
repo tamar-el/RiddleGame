@@ -14,11 +14,16 @@
 import PromptSync from 'prompt-sync';
 const prompt = PromptSync();
 class Riddle {
-    constructor(id, name, taskDescription, correctAnswer) {
+    constructor(id, name, taskDescription, correctAnswer, choices, level, timeLimit,hint) {
         this.id = id;
         this.name = name;
         this.taskDescription = taskDescription;
         this.correctAnswer = correctAnswer;
+        this.choices = choices;
+        this.level = level;
+        this.timeLimit = timeLimit;
+        this.hint=hint;
+
     }
     ask(prompt) {
         let answer;

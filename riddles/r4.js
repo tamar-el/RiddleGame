@@ -14,5 +14,9 @@ export default {
     "lion",
     "fish",
     "dog"
-  ]
+  ],
+  level:"hard",
+  timeLimit: 5,
+  hint:"this is not a fish"
+
 };

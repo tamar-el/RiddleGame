@@ -20,18 +20,28 @@ import AllRiddles from './riddles/index.js';
 const prompt = PromptSync();
 console.log("Hello! welcome to our riddle game");
 const name = prompt("What is your name? ");
-const P1=new Player(name);
+const P1 = new Player(name);
+const level = prompt('Choose difficulty: easy / medium / hard: ');
 
-AllRiddles.forEach(x=>{
-    const startT=Date.now();
-    // const R1=new Riddle(x.id,
-    // x.name,
-    // x.taskDescription,
-    // x.correctAnswer);
-    const R1=new Riddle(x);
-    R1.ask(prompt);
-    const endT=Date.now();
-    P1.recordTime(startT,endT);
+const AllRiddlesPerLevel = AllRiddles.filter(x => x.level.toLowerCase() == level.toLowerCase());
+AllRiddlesPerLevel.sort(()=>Math.random()-0.5);
+
+AllRiddlesPerLevel.forEach(x => {
+
+    //AllRiddles.forEach(x=>{ //סעיף 1\2
+    const startT = Date.now();
+    // const R1 = new Riddle(x.id,//סעיף 1
+    //     x.name,
+    //     x.taskDescription,
+    //     x.correctAnswer,
+    //     x.choices,
+    //     x.level,
+    //     x.timeLimit
+    // );
+    const R1 = new Riddle(x);
+    let penaltys = R1.ask(prompt);
+    const endT = Date.now();
+    P1.recordTime(startT, endT + penaltys * 1000);//הוספת העונש אם קיים
 })
 
 P1.showStats();

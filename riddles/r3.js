@@ -14,5 +14,9 @@ export default {
     "47",
     "9",
     "1"
-  ]
+  ],
+  level:"Easy",
+  timeLimit: 8,
+  hint:"the number is biger then 9"
+
 };
