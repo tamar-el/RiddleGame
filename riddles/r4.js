@@ -4,3 +4,9 @@
 // - name (string)
 // - taskDescription (string, the riddle text shown to the player)
 // - correctAnswer (string)
+export default {
+  id: 4,
+  name: "Animal Riddle",
+  taskDescription: "I have four legs and I bark. What am I?",
+  correctAnswer: "dog"
+};
